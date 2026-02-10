@@ -51,6 +51,12 @@ public class IronSword implements Weapon {
         System.out.println("Type: " + weaponType);
     }
 
+    @Override
+    public String getName() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getName'");
+    }
+
     // TODO: Consider adding theme-specific properties
     // For example, Medieval weapons might have:
     // - Durability

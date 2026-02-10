@@ -3,26 +3,32 @@ package com.narxoz.rpg.character;
 import com.narxoz.rpg.equipment.Armor;
 import com.narxoz.rpg.equipment.Weapon;
 
-public class Warrior extends Character {
+public class Mage extends Character {
     private Weapon equippedWeapon;
-    private Armor equippedArmor;    
-    public Warrior(String name) {
+    private Armor equippedArmor;
+    public Mage(String name) {
         super(name);
-        this.health = 150;
-        this.mana = 30;
-        this.strength = 80;
-        this.intelligence = 20;
-        this.type = CharactersTypes.WARRIOR;
+        this.health = 50;
+        this.mana = 90;
+        this.strength = 75;
+        this.intelligence = 100;
+        this.type = CharactersTypes.MAGE;
     }
     public String getName() {
-        return name;}
+        return name;
+    }
+
     public void displayStats() {
+        System.out.println("=== " + name + " (Mage) ===");
+        System.out.println("Health: " + health);
+        System.out.println("Mana: " + mana);
+        System.out.println("Strength: " + strength);
         System.out.println("Intelligence: " + intelligence);
     }
 
     @Override
     public void useSpecialAbility() {
-        System.out.println(name + " uses BERSERKER RAGE, strength temporarily increased!");
+        System.out.println(name + " uses MAGE FIREBALL, mana temporarily increased!");
     }
 
     @Override
@@ -43,7 +49,7 @@ public class Warrior extends Character {
     public int getIntelligence() {
         return intelligence;
     }
-     public void equipWeapon(Weapon weapon) {
+    public void equipWeapon(Weapon weapon) {
         this.equippedWeapon = weapon;
         System.out.println(name + " equipped " + weapon.getName());
     }
@@ -55,6 +61,5 @@ public class Warrior extends Character {
         System.out.println("Equipped Weapon: " + equippedWeapon.getName());
         System.out.println("Equipped Armor: " + equippedArmor.getName());
     }
+    
 }
-
-

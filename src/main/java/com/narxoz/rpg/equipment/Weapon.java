@@ -17,6 +17,7 @@ public interface Weapon {
     // Consider:
     // - int getDamage()
     // - String getWeaponInfo()
+    String getName();
     // - String getWeaponType()
     // - any theme-specific properties?
 

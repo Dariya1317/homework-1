@@ -14,11 +14,21 @@ public class Warrior extends Character {
         this.intelligence = 20;
         this.type = CharactersTypes.WARRIOR;
     }
+    
+    @Override
     public String getName() {
-        return name;}
+        return name;
+    }
+
+    @Override
     public void displayStats() {
+        System.out.println("=== " + name + " (Warrior) ===");
+        System.out.println("Health: " + health);
+        System.out.println("Mana: " + mana);
+        System.out.println("Strength: " + strength);
         System.out.println("Intelligence: " + intelligence);
     }
+
     @Override
     public void useSpecialAbility() {
         System.out.println(name + " uses BERSERKER RAGE, strength temporarily increased!");

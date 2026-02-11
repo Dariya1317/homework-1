@@ -17,7 +17,6 @@ public class Archer extends Character {
     public String getName() {
         return name;
     }
-
     public void displayStats() {
         System.out.println("=== " + name + " (Archer) ===");
         System.out.println("Health: " + health);
@@ -25,22 +24,18 @@ public class Archer extends Character {
         System.out.println("Strength: " + strength);
         System.out.println("Intelligence: " + intelligence);
     }
-
     @Override
     public void useSpecialAbility() {
         System.out.println(name + " ARCHER triggers Rain of Arrows, strength is temporarily enhanced!");
     }
-
     @Override
     public int getHealth() {
         return health;
     }
-
     @Override
     public int getMana() {
         return mana;
     }
-
     @Override
     public int getStrength() {
         return strength;

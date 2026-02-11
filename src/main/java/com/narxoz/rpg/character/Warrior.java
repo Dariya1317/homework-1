@@ -19,22 +19,18 @@ public class Warrior extends Character {
     public void displayStats() {
         System.out.println("Intelligence: " + intelligence);
     }
-
     @Override
     public void useSpecialAbility() {
         System.out.println(name + " uses BERSERKER RAGE, strength temporarily increased!");
     }
-
     @Override
     public int getHealth() {
         return health;
     }
-
     @Override
     public int getMana() {
         return mana;
     }
-
     @Override
     public int getStrength() {
         return strength;

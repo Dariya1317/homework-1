@@ -16,9 +16,13 @@ public interface Armor {
     // TODO: Add armor behavior methods
     // Consider:
     // - int getDefense()
+    int getDefense();
     // - String getArmorInfo()
+    String getArmorInfo();
     String getName();
     // - String getArmorType()
+    String getArmorType();
     // - any theme-specific properties?
+    String getEffect();
 
 }

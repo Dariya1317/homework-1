@@ -16,9 +16,13 @@ public interface Weapon {
     // TODO: Add weapon behavior methods
     // Consider:
     // - int getDamage()
+    int getDamage();
     // - String getWeaponInfo()
+    String getWeaponInfo();
     String getName();
     // - String getWeaponType()
+    String getWeaponType();
     // - any theme-specific properties?
+    String getEffect();
 
 }
